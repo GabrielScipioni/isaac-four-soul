@@ -1,8 +1,5 @@
 package Gabri.Dev.com.services.impl;
 
-import Gabri.Dev.com.models.Dummy;
-import Gabri.Dev.com.repositories.DummyRepository;
-import Gabri.Dev.com.services.DummyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
