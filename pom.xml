@@ -8,9 +8,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>Gabri.Dev.com</groupId>
-	<artifactId>scaffolding</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>scaffolding</name>
+	<artifactId>isaac-four-souls</artifactId>
+	<version>0.0.0</version>
+	<name>isaac-four-souls</name>
 	<description>template spring</description>
 	<properties>
 		<java.version>17</java.version>
@@ -52,11 +52,28 @@
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.1.0</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.7.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.liquibase</groupId>
+			<artifactId>liquibase-core</artifactId>
+			<version>4.22.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -105,5 +122,7 @@
 				</executions>
 			</plugin>
 		</plugins>
+
 	</build>
+
 </project>
